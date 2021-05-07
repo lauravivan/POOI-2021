@@ -1,4 +1,4 @@
-package exercgithub;
+package EXE4;
 
 public class BancoDoMotorista {
     private int posicao;
