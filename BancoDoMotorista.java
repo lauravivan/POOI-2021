@@ -33,8 +33,8 @@ public class BancoDoMotorista {
     public boolean isTotalmenteAbaixado() {
         if (this.posicao != 0) {
             this.totalmenteAbaixado = false;
-            System.out.println("O banco não está totalmente abaixado pois "
-                    + "não se encontra na posição ZERO");
+            System.out.println("Não, o banco não está totalmente abaixado pois "
+                    + "não se encontra na posição ZERO.");
         }
         if (this.posicao == 0) {
             this.totalmenteAbaixado = true;
@@ -47,8 +47,8 @@ public class BancoDoMotorista {
     public boolean isTotalmenteLevantado() {
         if (this.posicao != 5) {
             this.totalmenteLevantado = false;
-            System.out.println("O banco não está totalmente levantado pois "
-                    + "não se encontra na posição CINCO");
+            System.out.println("Não, o banco não está totalmente levantado pois "
+                    + "não se encontra na posição CINCO.");
         }
         if (this.posicao == 5) {
             this.totalmenteLevantado = true;
@@ -63,7 +63,7 @@ public class BancoDoMotorista {
             System.out.println("Sim, o banco está abaixado pois se encontra na "
                     + "posição " + this.posicao);
         } else {
-            System.out.println("Não, o banco não está abaixado, pois está na posição " + this.posicao);
+            System.out.println("Não, o banco não está abaixado pois está na posição " + this.posicao + ".");
         }
         return this.abaixado;
     }
@@ -73,7 +73,7 @@ public class BancoDoMotorista {
             System.out.println("Sim, o banco está levantado pois se encontra na "
                     + "posição " + this.posicao);
         } else {
-            System.out.println("Não, o banco não está levantado, pois está na posição " + this.posicao);
+            System.out.println("Não, o banco não está levantado pois está na posição " + this.posicao + ".");
         }
         return this.levantado;
     }
