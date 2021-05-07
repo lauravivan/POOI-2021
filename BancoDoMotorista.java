@@ -79,7 +79,7 @@ public class BancoDoMotorista {
     }
     
     public void abaixarBanco() {
-        if (this.posicao <= 0) {
+        if (this.posicao == 0) {
             System.out.println("Não force a alavanca, o banco não pode mais ser abaixado!");
         } else {
             System.out.println("Você abaixou o banco!");
@@ -88,7 +88,7 @@ public class BancoDoMotorista {
     }
     
     public void subirBanco() {
-        if (this.posicao >= 5) {
+        if (this.posicao == 5) {
             System.out.println("Não force a alavanca, o banco não pode mais ser levantado!");
         } else {
             System.out.println("Você subiu o banco!");
