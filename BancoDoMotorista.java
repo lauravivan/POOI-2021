@@ -25,7 +25,7 @@ public class BancoDoMotorista {
     
     public int getPosicao() {
         if (this.posicao >= 0 && this.posicao <= 5) {
-            System.out.println("Posição se encontra em " +this.posicao+ ".");
+            System.out.println("Posição se encontra em " + this.posicao + ".");
         }
         return this.posicao;
     }
@@ -39,7 +39,7 @@ public class BancoDoMotorista {
         if (this.posicao == 0) {
             this.totalmenteAbaixado = true;
             System.out.println("Sim, o banco está totalmente abaixado! Portanto, "
-                    + "não force a alavanca para baixo! ");
+                    + "não force a alavanca para baixo!");
         }
         return this.totalmenteAbaixado;
     }
@@ -53,7 +53,7 @@ public class BancoDoMotorista {
         if (this.posicao == 5) {
             this.totalmenteLevantado = true;
             System.out.println("Sim, o banco está totalmente levantado! Portanto, "
-                    + "não force a alavanca para cima! ");
+                    + "não force a alavanca para cima!");
         }
         return this.totalmenteLevantado;
     }
