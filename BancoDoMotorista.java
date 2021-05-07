@@ -16,11 +16,10 @@ public class BancoDoMotorista {
     }
 
     public void setPosicao(int posicao) {
-        if (this.posicao >= 0 && this.posicao <= 5) {
+        if (posicao >= 0 && posicao <= 5) {
             this.posicao = posicao;
         } else {
             System.out.println("Error message: Posição Inválida! Tente outra vez!");
-            this.posicao = posicao;
         }
     }
     
