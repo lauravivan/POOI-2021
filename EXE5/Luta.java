@@ -79,9 +79,7 @@ public class Luta {
         if (isAprovada() && (getRounds() != 0)) {
             this.desafiado.apresentar();
             this.desafiante.apresentar();
-        }
-
-        if (isAprovada() && (getRounds() != 0)) {
+            
             while (round <= getRounds()) {
                 Random numero = new Random();
                 int vencedor = numero.nextInt(3);
