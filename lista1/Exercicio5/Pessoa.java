@@ -20,8 +20,7 @@ public class Pessoa {
 	}
 
 	public void fazAniversario() {
-
 		this.idade = (getIdade() + 1);
-		System.out.println("Feliz Anivers·rio!");
+		System.out.println("Feliz Anivers√°rio!");
 	}
 }
