@@ -63,13 +63,14 @@ public class DiscoRigido extends PecaComputador {
 		setVazio(false);
 
 		if (armazenar <= 0 || armazenar > getCapacidade()) {
-			System.out.println("error message");
+			System.out.println("error message: VOCÊ ESTÁ TENTANDO ARMAZENAR UM VALOR INVÁLIDO!");
 		} else if (armazenar == getCapacidade() && (getEspacoUsado() == 0)){
 			setEspacoUsado(armazenar);
 			setEspacoLivre(0);
 			setCheio(true);
 		} else if (armazenar == getCapacidade() && (getEspacoUsado() != 0)) {
-			System.out.println("Error message");
+			System.out.println("Error message: VOCÊ ESTÁ TENTANDO ARMAZENAR UM VALOR QUE ULTRAPASSA"
+					   + " O ESPAÇO DISPONÍVEL");
 		} else {
 			setEspacoUsado(getEspacoUsado() + armazenar);
 			setEspacoLivre(getCapacidade() - getEspacoUsado());
@@ -86,7 +87,7 @@ public class DiscoRigido extends PecaComputador {
 			setEspacoUsado(getEspacoUsado() - liberar);
 			setEspacoLivre(getCapacidade() - getEspacoUsado());
 		} else {
-			System.out.println("error message");
+			System.out.println("error message: VALOR INVÁLIDO!");
 		}
 	}
 
@@ -95,11 +96,11 @@ public class DiscoRigido extends PecaComputador {
 		System.out.println("Nome do dispositivo: " + getNome());
 		System.out.println("Modelo: " + getModelo());
 		System.out.println("Capacidade: " + getCapacidade());
-		System.out.println("Espa�o utilizado: " + getEspacoUsado() +
-				", com " + getEspacoLivre() + " de espa�o livre");
+		System.out.println("Espaço utilizado: " + getEspacoUsado() +
+				", com " + getEspacoLivre() + " de espaço livre");
 		if (isCheio()) {
-			System.out.println("Alerta: Capacidade usada totalmente. "
-					+ "Limpe o seu disco.");
+			System.out.println("Alerta: o espaço usado é o mesmo da capacidade total. "
+					+ "Limpe o seu disco para evitar problemas.");
 		} else {
 			System.out.println("O disco se encontra ok");
 		}
