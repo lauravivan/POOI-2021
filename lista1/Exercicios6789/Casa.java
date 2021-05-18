@@ -54,7 +54,6 @@ public class Casa extends Imovel {
 	public int quantasPortasEstaoAbertas() {
 		int qndAbertas = 0;
 
-
 		if (porta1 != null) {
 			if (porta1.isAberta()) {
 				qndAbertas++;
