@@ -9,11 +9,11 @@ public class Casa extends Imovel {
 	public void getPorta1() {
 		if (this.porta1 != null) {
 			System.out.println("Cor da porta 1: " + this.porta1.getCor());
-			System.out.println("Dimensıes: " + this.porta1.getDimensaoX() 
+			System.out.println("Dimens√µes: " + this.porta1.getDimensaoX() 
 			+ ", " + this.porta1.getDimensaoY() + ", "
 			+ this.porta1.getDimensaoZ() + "\n");
 		} else {
-			System.out.println("Porta 1 n„o existe");
+			System.out.println("Porta 1 n√£o existe");
 		}
 	}
 
@@ -24,11 +24,11 @@ public class Casa extends Imovel {
 	public void getPorta2() {
 		if (this.porta2 != null) {
 			System.out.println("Cor da porta 2: " + this.porta2.getCor());
-			System.out.println("Dimensıes: " + this.porta2.getDimensaoX() 
+			System.out.println("Dimens√µes: " + this.porta2.getDimensaoX() 
 			+ ", " + this.porta2.getDimensaoY() + ", "
 			+ this.porta2.getDimensaoZ() + "\n");
 		} else {
-			System.out.println("Porta 2 n„o existe");
+			System.out.println("Porta 2 n√£o existe");
 		}
 	}
 
@@ -39,11 +39,11 @@ public class Casa extends Imovel {
 	public void getPorta3() {
 		if (this.porta3 != null) {
 			System.out.println("Cor da porta 3: " + this.porta3.getCor());
-			System.out.println("Dimensıes: " + this.porta3.getDimensaoX() 
+			System.out.println("Dimens√µes: " + this.porta3.getDimensaoX() 
 			+ ", " + this.porta3.getDimensaoY() + ", "
 			+ this.porta3.getDimensaoZ() + "\n");
 		} else {
-			System.out.println("Porta 3 n„o existe");
+			System.out.println("Porta 3 n√£o existe");
 		}
 	} 
 
@@ -54,15 +54,23 @@ public class Casa extends Imovel {
 	public int quantasPortasEstaoAbertas() {
 		int qndAbertas = 0;
 
-		if (porta1.isAberta()) {
+		if (porta1 != null) {
+			if (porta1.isAberta()) {
 			qndAbertas++;
-		}
-		if (porta2.isAberta()) {
+			}
+		} 
+		
+		if (porta2 != null) {
+			if (porta2.isAberta()) {
 			qndAbertas++;
-		}
-		if (porta3.isAberta()) {
+			}
+		} 
+		
+		if (porta3 != null) {
+			if (porta3.isAberta()) {
 			qndAbertas++;
-		}
+			}
+		} 
 		return qndAbertas;
 	}
 }
