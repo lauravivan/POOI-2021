@@ -2,21 +2,21 @@ import javax.swing.JOptionPane;
 
 public class Lista01N01 {
 	
-	/* 1) Uma empresa decidiu fazer um levantamento em relação aos candidatos que
-	se apresentaram para preenchimento de vagas no seu quadro de funcionários.
-	Fazer um algoritmo que leia o conjunto de informações de cada candidato,
+	/* 1) Uma empresa decidiu fazer um levantamento em relaÃ§Ã£o aos candidatos que
+	se apresentaram para preenchimento de vagas no seu quadro de funcionÃ¡rios.
+	Fazer um algoritmo que leia o conjunto de informaÃ§Ãµes de cada candidato,
 	contendo:
 	- Idade(em anos)
 	- Sexo (1=M / 2=F)
-	- Experiência no serviço (1=S / 2=N).
+	- ExperiÃªncia no serviÃ§o (1=S / 2=N).
 	O algoritmo deve calcular:
 	A) Quantidade de candidatos do sexo feminino,
 	B) Quantidade de candidatos do sexo masculino,
-	C) Idade media dos homens com experiência no serviço,
-	D) Porcentagem dos homens com mais de 45 anos, em relação ao total de
+	C) Idade media dos homens com experiÃªncia no serviÃ§o,
+	D) Porcentagem dos homens com mais de 45 anos, em relaÃ§Ã£o ao total de
 	homens,
-	E) Quantidade de mulheres com idade inferior a 35 anos e com experiência no
-	serviço.
+	E) Quantidade de mulheres com idade inferior a 35 anos e com experiÃªncia no
+	serviÃ§o.
 	OBS.: Existem 20 candidatos inscritos. */
 
 	public static void main(String[] args) {
@@ -30,12 +30,12 @@ public class Lista01N01 {
 			inputValue = JOptionPane.showInputDialog ("Inform age: ");
 			age = Integer.parseInt (inputValue);
 			inputValue = JOptionPane.showInputDialog ("Inform gender: "
-																+ "\n1 = Woman"
-																+ "\n2 = Man");
+										+ "\n1 = Woman"
+										+ "\n2 = Man");
 			gender = Integer.parseInt (inputValue);
 			inputValue = JOptionPane.showInputDialog ("Inform experience: "
-																+ "\n1 = Yes" 
-					    										+ "\n2 = No");
+										+ "\n1 = Yes" 
+					    					+ "\n2 = No");
 			exp = Integer.parseInt (inputValue);
 			
 			if (gender == 1) {
@@ -45,14 +45,14 @@ public class Lista01N01 {
 				}
 			} else {
 				sumMen++;
-					if (exp == 1) {
-						sumMenAges+= age;
-						menWithExp++;
-					} 
-					//else if entraria na condição abaixo se a anterior fosse falsa, mas não é.
-					if (age > 45){
-						menMoreThan45++;
-					};
+				if (exp == 1) {
+					sumMenAges+= age;
+					menWithExp++;
+				} 
+				//else if entraria na condiÃ§Ã£o abaixo se a anterior fosse falsa, mas nÃ£o Ã©.
+				if (age > 45){
+					menMoreThan45++;
+				};
 			}
 			staff++;
 		}
