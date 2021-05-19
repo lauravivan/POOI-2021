@@ -2,16 +2,16 @@ import javax.swing.JOptionPane;
 
 public class Lista01N03 {
 	
-	/*	3) O Departamento de Trânsito do estado anotou dados de acidentes de trânsito
+	/*	3) O Departamento de TrÃ¢nsito do estado anotou dados de acidentes de trÃ¢nsito
 	no ultimo ano. Para cada um dos 20 motoristas envolvidos em acidentes, tem-se
-	as seguintes informações:
-	· Ano de nascimento;
-	· Sexo (1=Masculino, 2=Feminino)
+	as seguintes informaÃ§Ãµes:
+	Â· Ano de nascimento;
+	Â· Sexo (1=Masculino, 2=Feminino)
 	Elaborar um algoritmo que :
-	· Calcule e escreva a porcentagem de motoristas com menos de 21 anos;
-	· Calcule e escreva o percentual de motoristas mulheres em relação ao total;
-	· Calcule e escreva quantos motoristas tem idade maior que 60 anos;
-	· Determine e escreva quantas mulheres têm idade maior que 60 anos; */
+	Â· Calcule e escreva a porcentagem de motoristas com menos de 21 anos;
+	Â· Calcule e escreva o percentual de motoristas mulheres em relaÃ§Ã£o ao total;
+	Â· Calcule e escreva quantos motoristas tem idade maior que 60 anos;
+	Â· Determine e escreva quantas mulheres tÃªm idade maior que 60 anos; */
 
 	public static void main(String[] args) {
 		
@@ -20,12 +20,11 @@ public class Lista01N03 {
 		String inputValue;
 		
 		while(drivers < 10) {
-			
 			inputValue = JOptionPane.showInputDialog ("Inform year of birth: ");
 			yearOfBirth = Integer.parseInt(inputValue);
 			inputValue = JOptionPane.showInputDialog ("Inform gender: "
-														+ "\n1 = Man"
-														+ "\n2 = Woman");
+										+ "\n1 = Man"
+										+ "\n2 = Woman");
 			gender = Integer.parseInt(inputValue);
 			
 			if ((2021 - yearOfBirth) < 21) {
