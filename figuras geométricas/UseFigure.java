@@ -1,14 +1,12 @@
 import javax.swing.JOptionPane;
 
 public class UseFigure {
-	//mine, yours, ugly, pretty são referencias
+	//mine, yours, ugly, pretty sÃ£o referencias
 	//supondo que haja 2 quadrados
 	//mine = quadrado azul; yours = quadrado amarelo
 	//e outro = mine; 
-	//haverá três referências, 2 apontando para o mesmo quadrado, pois outro = mine;
+	//haverÃ¡ trÃªs referÃªncias, 2 apontando para o mesmo quadrado, pois outro = mine;
 	
-	//CLASSE = FORMA DE PÃO FRANCÊS (MODELO, FORMA)
-	//OBJETO = OS PÃES
 	public static void main(String[] args) {
 		int number, auxiliar;
 		String valueOfEntrance;
