@@ -1,6 +1,5 @@
-package exe5;
 
-public class EXE5 {
+public class Main {
 
     public static void main(String[] args) {
         Lutador[] L = new Lutador[6];
