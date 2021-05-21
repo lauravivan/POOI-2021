@@ -1,6 +1,5 @@
-package exe5;
 
-public final class Lutador {
+public class Lutador {
 
     private String nome;
     private String nacionalidade;
