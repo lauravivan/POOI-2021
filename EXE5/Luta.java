@@ -1,5 +1,3 @@
-package exe5;
-
 import java.util.Random;
 
 public class Luta {
