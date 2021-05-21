@@ -1,10 +1,6 @@
 
 public class BancoDoMotorista {
     private int posicao;
-    private boolean totalmenteAbaixado;
-    private boolean totalmenteLevantado;
-    private boolean abaixado;
-    private boolean levantado;
     
     //Quando a posição se encontra em 0 = TOTALMENTE ABAIXADO
     //Quando a posição se encontra em 1 ou 2 = ABAIXADO
