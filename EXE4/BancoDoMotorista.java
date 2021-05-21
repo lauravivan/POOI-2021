@@ -1,4 +1,3 @@
-package EXE4;
 
 public class BancoDoMotorista {
     private int posicao;
@@ -23,11 +22,8 @@ public class BancoDoMotorista {
         }
     }
     
-    public int getPosicao() {
-        if (this.posicao >= 0 && this.posicao <= 5) {
+    public void getPosicao() {
             System.out.println("Posição se encontra em " + this.posicao + ".");
-        }
-        return this.posicao;
     }
 
     public boolean isTotalmenteAbaixado() {
