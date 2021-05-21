@@ -26,7 +26,7 @@ public class BancoDoMotorista {
             System.out.println("Posição se encontra em " + this.posicao + ".");
     }
 
-    public boolean isTotalmenteAbaixado() {
+    public void isTotalmenteAbaixado() {
         if (this.posicao != 0) {
             this.totalmenteAbaixado = false;
             System.out.println("Não, o banco não está totalmente abaixado pois "
@@ -37,10 +37,9 @@ public class BancoDoMotorista {
             System.out.println("Sim, o banco está totalmente abaixado! Portanto, "
                     + "não force a alavanca para baixo!");
         }
-        return this.totalmenteAbaixado;
     }
     
-    public boolean isTotalmenteLevantado() {
+    public void isTotalmenteLevantado() {
         if (this.posicao != 5) {
             this.totalmenteLevantado = false;
             System.out.println("Não, o banco não está totalmente levantado pois "
@@ -51,10 +50,9 @@ public class BancoDoMotorista {
             System.out.println("Sim, o banco está totalmente levantado! Portanto, "
                     + "não force a alavanca para cima!");
         }
-        return this.totalmenteLevantado;
     }
     
-    public boolean isAbaixado() {
+    public void isAbaixado() {
         if (this.posicao == 1 || this.posicao == 2 || this.posicao == 0) {
             System.out.println("Sim, o banco está abaixado pois se encontra na "
                     + "posição " + this.posicao);
@@ -62,10 +60,9 @@ public class BancoDoMotorista {
             System.out.println("Não, o banco não está abaixado pois está na posição " 
                     + this.posicao + ".");
         }
-        return this.abaixado;
     }
 
-    public boolean isLevantado() {
+    public void isLevantado() {
         if (this.posicao == 3 || this.posicao == 4 || this.posicao == 5) {
             System.out.println("Sim, o banco está levantado pois se encontra na "
                     + "posição " + this.posicao);
@@ -73,7 +70,6 @@ public class BancoDoMotorista {
             System.out.println("Não, o banco não está levantado pois está na posição " 
                     + this.posicao + ".");
         }
-        return this.levantado;
     }
     
     public void abaixarBanco() {
