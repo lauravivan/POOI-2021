@@ -29,10 +29,11 @@ public class Edificio extends Imovel {
 
 	public void getPortas() {
 		int numero = 1;
+		System.out.println("---PORTAS DO PRÉDIO---");
 		for (int i = 0; i < getTotalPortas(); i++) {
 			System.out.println("Cor da porta " + numero + ": " 
 					+ this.portas[i].getCor());
-			System.out.println("Dimens�es: " + this.portas[i].getDimensaoX()
+			System.out.println("Dimensões: " + this.portas[i].getDimensaoX()
 					+ ", " + this.portas[i].getDimensaoY() + ", "
 					+ this.portas[i].getDimensaoZ() + "\n");
 			numero++;
