@@ -8,7 +8,8 @@ public class Casa extends Imovel {
 
 	public void getPorta1() {
 		if (this.porta1 != null) {
-			System.out.println("Cor da porta 1: " + this.porta1.getCor());
+			System.out.println("---PORTA 1 DA CASA---");
+			System.out.println("Cor: " + this.porta1.getCor());
 			System.out.println("Dimensões: " + this.porta1.getDimensaoX() 
 			+ ", " + this.porta1.getDimensaoY() + ", "
 			+ this.porta1.getDimensaoZ() + "\n");
@@ -23,7 +24,8 @@ public class Casa extends Imovel {
 
 	public void getPorta2() {
 		if (this.porta2 != null) {
-			System.out.println("Cor da porta 2: " + this.porta2.getCor());
+			System.out.println("---PORTA 2 DA CASA---");
+			System.out.println("Cor: " + this.porta2.getCor());
 			System.out.println("Dimensões: " + this.porta2.getDimensaoX() 
 			+ ", " + this.porta2.getDimensaoY() + ", "
 			+ this.porta2.getDimensaoZ() + "\n");
@@ -38,7 +40,8 @@ public class Casa extends Imovel {
 
 	public void getPorta3() {
 		if (this.porta3 != null) {
-			System.out.println("Cor da porta 3: " + this.porta3.getCor());
+			System.out.println("---PORTA 3 DA CASA---");
+			System.out.println("Cor: " + this.porta3.getCor());
 			System.out.println("Dimensões: " + this.porta3.getDimensaoX() 
 			+ ", " + this.porta3.getDimensaoY() + ", "
 			+ this.porta3.getDimensaoZ() + "\n");
