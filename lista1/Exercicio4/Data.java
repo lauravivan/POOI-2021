@@ -2,7 +2,6 @@
 public class Data {
 
 	private int dia, mes, ano;
-	private String dataCompleta;
 
 	public int getDia() {
 		return this.dia;
@@ -31,19 +30,19 @@ public class Data {
 	public String formatoBrasileiro() {
 		//(DD-MM-AAAA)
 
-		dataCompleta = "(" + getDia() + "-" + getMes() 
+		String dataBrasileira = "(" + getDia() + "-" + getMes() 
 		+ "-" + getAno() + ")";
 
-		return dataCompleta;
+		return dataBrasileira;
 	}
 
 	public String formatoEstadunidense() {
 		//(MM-DD-AAAA)
 
-		dataCompleta = "(" + getMes() + "-" + getDia()
+		String dataEstadunidense = "(" + getMes() + "-" + getDia()
 		+ "-" + getAno() + ")";
 
-		return dataCompleta;
+		return dataEstadunidense;
 	}
 }
 
